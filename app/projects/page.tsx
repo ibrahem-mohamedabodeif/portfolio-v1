@@ -27,16 +27,16 @@ import { IoIosLink, IoLogoJavascript } from "react-icons/io";
 // Mapping technologies to icons
 const techIcons = {
   "Tailwind CSS": <RiTailwindCssFill size={25} className="text-blue-500" />,
-  TypeScript: <SiTypescript size={25} className="text-blue-700" />,
+  "TypeScript": <SiTypescript size={25} className="text-blue-700" />,
   "React.js": <FaReact size={25} className="text-blue-500" />,
   "Next.js": <RiNextjsFill size={25} className="text-white" />,
-  JavaScript: <IoLogoJavascript size={25} className="text-yellow-400" />,
+  "JavaScript": <IoLogoJavascript size={25} className="text-yellow-400" />,
   "React Router": <SiReactrouter size={25} className="text-red-600" />,
-  "React Query": <SiReactquery size={25} className="text-red-800" />,
-  Supabase: <RiSupabaseFill size={25} className="text-green-500" />,
-  Redux: <SiRedux size={25} className="text-white" />,
-  CSS: <FaCss3Alt size={25} className="text-blue-800" />,
-  Zod: <SiZod size={25} className="text-blue-800" />,
+  "React query": <SiReactquery size={25} className="text-red-800" />,
+  "Supabase": <RiSupabaseFill size={25} className="text-green-500" />,
+  "Redux": <SiRedux size={25} className="text-white" />,
+  "CSS": <FaCss3Alt size={25} className="text-blue-800" />,
+  "Zod": <SiZod size={25} className="text-blue-800" />,
   "React Hook Form": <SiReacthookform size={25} className="text-pink-800" />,
 };
 
@@ -95,12 +95,12 @@ export default function ProjectsSection() {
           <h2 className="text-base sm:text-lg md:text-xl text-gray-300 tracking-wider">
             {projects[currentProject].category}
           </h2>
-          <h1 className="text-xl sm:text-2xl md:text-4xl lg:text-4xl font-bold tracking-wider text-red-600 hover:text-red-500 transition-colors">
+          <h1 className="text-2xl md:text-4xl lg:text-4xl font-bold tracking-wider text-red-600 hover:text-red-500 transition-colors">
             {projects[currentProject].projectName}
           </h1>
 
           {/* Links */}
-          <div className="flex flex-row gap-4 sm:gap-5">
+          <div className="flex flex-row gap-4 sm:gap-5 py-2">
             <a target="_blank" rel="noopener noreferrer" href={projects[currentProject].demo} className="text-white hover:text-red-400 transition-colors">
               <IoIosLink size={22} className="sm:w-6 sm:h-6" />
             </a>

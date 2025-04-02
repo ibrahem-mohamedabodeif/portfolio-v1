@@ -20,7 +20,7 @@ export default function Navbar() {
             Find me
           </button>
         </ActiveLink>
-        <button className="outline-none p-2 w-20 rounded-full bg-white text-base font-extralight">
+        <button className="outline-none p-2 w-20 rounded-full bg-white text-black text-base font-extralight">
           <a href="/Ibrahem Mohamed (front-end developer).pdf" download>
             CV
           </a>
@@ -43,9 +43,9 @@ export default function Navbar() {
           <li className="text-lg font-extralight tracking-wider">
             <ActiveLink href="/">Home</ActiveLink>
           </li>
-          <span className="text-xl">/</span>
+          <span className="text-xl text-black">/</span>
           <li className="text-lg font-extralight tracking-wider"><ActiveLink href="/projects">Projects </ActiveLink></li>
-          <span className="text-xl">/</span>
+          <span className="text-xl text-black">/</span>
           <li className="text-lg font-extralight tracking-wider">
             <ActiveLink href="/about">About</ActiveLink>
           </li>

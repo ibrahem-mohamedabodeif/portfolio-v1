@@ -6,10 +6,12 @@ import {
   RiTailwindCssFill,
 } from "react-icons/ri";
 import {
+  SiReacthookform,
   SiReactquery,
   SiReactrouter,
   SiRedux,
   SiTypescript,
+  SiZod,
 } from "react-icons/si";
 export default function SkillsSec() {
   return (
@@ -77,6 +79,18 @@ export default function SkillsSec() {
           <SiReactquery size={60} className="text-red-800" />
           <span className=" text-red-800 text-sm font-semibold tracking-wide font-mono border-transparent rounded-lg p-1 bg-gray-200">
             React query
+          </span>
+        </div>
+        <div className="flex flex-col items-center gap-3">
+          <SiZod size={60} className="text-blue-800" />
+          <span className=" text-red-800 text-sm font-semibold tracking-wide font-mono border-transparent rounded-lg p-1 bg-gray-200">
+            Zod
+          </span>
+        </div>
+        <div className="flex flex-col items-center gap-3">
+          <SiReacthookform size={60} className="text-pink-800" />
+          <span className=" text-red-800 text-sm font-semibold tracking-wide font-mono border-transparent rounded-lg p-1 bg-gray-200">
+            React Hook Form
           </span>
         </div>
 

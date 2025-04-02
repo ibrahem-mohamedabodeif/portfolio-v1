@@ -6,7 +6,7 @@ import ActiveLink from "./activeLink";
 export default function BurgerMenu() {
   const [open, setOpen] = useState(false);
   return (
-    <div aria-label="hamburger-menu" className="relative block lg:hidden">
+    <div aria-label="hamburger-menu" className="relative block lg:hidden text-black">
       <button aria-label="menu-btn" onClick={() => setOpen(!open)}>
         <CiMenuBurger size={25} />
       </button>

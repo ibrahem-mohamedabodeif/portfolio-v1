@@ -15,12 +15,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="text-black" cz-shortcut-listen="true">
+      <body cz-shortcut-listen="true">
         <div className="py-3 px-7 lg:px-20 bg-[#e5e5e5]">
           <Navbar />
         </div>
-        <main className="min-h-screen">{children}</main>
-        <footer className="mt-auto">
+        <main className="min-h-screen bg-white text-black">{children}</main>
+        <footer className="mt-auto bg-white text-black">
           <Footer />
         </footer>
       </body>

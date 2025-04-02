@@ -10,7 +10,7 @@ export default function HeroSec() {
     }
   };
   return (
-    <div className="relative py-16 px-7 md:py-52 lg:py-16 lg:px-20 bg-[#e5e5e5] rounded-b-[100px] h-svh">
+    <div className="relative py-16 px-7 md:py-52 lg:py-16 lg:px-20 bg-[#e5e5e5] rounded-b-[100px] h-svh text-black">
     <div aria-label="main" className="lg:pl-10 text-center flex flex-col">
       <div aria-label="photo" className="flex flex-col items-center mx-10">
         <div className="w-40 h-40 md:w-56 md:h-56 lg:w-48 lg:h-48 overflow-hidden relative border-4 border-white rounded-full">
