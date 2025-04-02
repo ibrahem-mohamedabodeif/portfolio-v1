@@ -25,7 +25,15 @@ import { useSearchParams } from "next/navigation";
 
 export default function ProjectsSection() {
   const searchParams = useSearchParams();
-  const projectName = searchParams.get("project");
+  const [projectName, setProjectName] = useState<string | null>(null);
+
+  useEffect(() => {
+    const fetchProjectName = async () => {
+      const name = searchParams.get("project");
+      setProjectName(name);
+    };
+    fetchProjectName();
+  }, [searchParams]);
   const [currentProject, setCurrentProject] = useState(0);
   const [imageSrc, setImageSrc] = useState(projects[0].imageCover.large);
 
