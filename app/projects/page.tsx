@@ -1,5 +1,5 @@
 "use client";
-import { useEffect, useState } from "react";
+import { Suspense, useEffect, useState } from "react";
 import Image from "next/image";
 import projects from "@/data/projects.json";
 import {
@@ -25,15 +25,7 @@ import { useSearchParams } from "next/navigation";
 
 export default function ProjectsSection() {
   const searchParams = useSearchParams();
-  const [projectName, setProjectName] = useState<string | null>(null);
-
-  useEffect(() => {
-    const fetchProjectName = async () => {
-      const name = searchParams.get("project");
-      setProjectName(name);
-    };
-    fetchProjectName();
-  }, [searchParams]);
+  const projectName = searchParams.get("project");
   const [currentProject, setCurrentProject] = useState(0);
   const [imageSrc, setImageSrc] = useState(projects[0].imageCover.large);
 
@@ -93,6 +85,7 @@ export default function ProjectsSection() {
   };
 
   return (
+    <Suspense fallback={<div className="w-full h-screen flex items-center justify-center text-gray-500">Loading...</div>}>
     <div className="relative w-full h-screen flex items-center justify-center text-white overflow-hidden">
       {/* Background Image */}
       <div className="absolute inset-0">
@@ -196,5 +189,6 @@ export default function ProjectsSection() {
         </button>
       </div>
     </div>
+    </Suspense>
   );
 }
