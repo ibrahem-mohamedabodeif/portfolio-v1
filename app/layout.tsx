@@ -1,13 +1,7 @@
 import type { Metadata } from "next";
-import { Open_Sans } from 'next/font/google'
 import "./globals.css";
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
-
-export const openSans = Open_Sans({
-  subsets: ['latin'],
-  style: "normal",
-})
 
 export const metadata: Metadata = {
   title: "Portfolio",
@@ -43,7 +37,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={openSans.className}>
+    <html lang="en">
       <body className="text-black">
         <header className="py-3 px-7 lg:px-20 bg-[#e5e5e5]">
           <Navbar/>
