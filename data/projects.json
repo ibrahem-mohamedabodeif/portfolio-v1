@@ -4,12 +4,10 @@
       "title": "Homely",
       "category": "Saas platform",
       "projectName": "Homely",
-      "summary": "Homely Bookings is an intuitive and user-friendly room reservation platform designed for travelers seeking seamless booking experiences and hosts aiming to manage their properties effortlessly. The platform combines modern web technologies to provide a secure and dynamic booking environment tailored for comfort and convenience.",
-      "tech": ["Next.js","React.js","TypeScript","Tailwind CSS","Supabase"],
+      "summary": "Homely is an innovative platform that enables travelers, whether for tourism or temporary accommodation, to easily find the perfect place to meet their needs. Through an advanced search system and smart filters, users can explore a wide range of properties, compare available options, and manage their bookings seamlessly. The platform also provides property owners with an integrated space to add and manage their properties, allowing them to track bookings and manage their profiles flexibly and efficiently.",
+      "tech": ["Next.js","TypeScript","Tailwind CSS","Supabase","Zod","React Hook Form"],
       "features": ["Room Search and Booking", "Room Management", "Booking System","Reservation Management","Detailed Booking Insights" ,"Responsive Design"],
-      "imageCover": "/projects images/homely/image1.png",
-      "images":["/projects images/homely/image1.png","/projects images/homely/image3.png","/projects images/homely/image4.png","/projects images/homely/image5.png","/projects images/homely/image6.png","/projects images/homely/image7.png","/projects images/homely/image8.png","/projects images/homely/image9.png","/projects images/homely/image10.png","/projects images/homely/image11.png","/projects images/homely/image12.png","/projects images/homely/image13.png","/projects images/homely/image14.png","/projects images/homely/image15.png","/projects images/homely/image16.png","/projects images/homely/image17.png","/projects images/homely/image18.png","/projects images/homely/image19.png"],
-      "performance":"/projects images/homely/screely-1735663148007.png",
+      "imageCover": {"large":"/projects images/homely/image1.png","medium":"/projects images/homely/homely-medium.png","small":"/projects images/homely/homely-small.png"},
       "demo": "https://homely-bookings.vercel.app",
       "github": "https://github.com/ibrahem-mohamedabodeif/homely"
     },
@@ -21,12 +19,11 @@
       "summary": "Pegasus Ecommerce is a modern web-based platform that allows users to browse and purchase products with a seamless user experience. The site includes features like product filtering, sorting, and a streamlined checkout process to ensure an optimal shopping experience. The project integrates robust technologies to create a scalable and user-friendly interface.",
       "tech": ["React.js","JavaScript","React query","React Router","Redux","Tailwind CSS", "Supabase"],
       "features": ["User Authentication", "Product browsing with filters and sorting", "Shopping cart and checkout system","User Dashboard", "Integration with a real-time database to manage product listings and user orders"],
-      "imageCover": "/projects images/e-commerce/screely-1727064228223.png",
-      "images":["/projects images/e-commerce/e-commerce.png","/projects images/e-commerce/image-full.png","/projects images/e-commerce/image2.png","/projects images/e-commerce/image3.png","/projects images/e-commerce/image4.png","/projects images/e-commerce/image5.png","/projects images/e-commerce/image6.png","/projects images/e-commerce/image7.png","/projects images/e-commerce/image8.png","/projects images/e-commerce/image9.png","/projects images/e-commerce/image10.png"],
-      "performance":"/projects images/e-commerce/screely-1727064188327.png",
+      "imageCover": {"large":"/projects images/e-commerce/e-commerce.png","medium":"/projects images/e-commerce/ecommerce-medium.png","small":"/projects images/e-commerce/ecommerce-small.png"},
       "demo": "https://pegasus-ecommerce.vercel.app/",
       "github": "https://github.com/ibrahem-mohamedabodeif/Pegasus-Ecommerce"
-    },{
+    },
+    {
       "id": 3,
       "title": "PegasusDashboard",
       "category": "Web app",
@@ -34,33 +31,20 @@
       "summary": "Pegasus Dashboard is an admin panel designed for managing products and sales in an ecommerce platform. It allows admins to add, edit, and delete products, as well as track sales performance through interactive charts. The dashboard provides an intuitive interface for monitoring key business metrics and managing product inventories.",
       "tech": ["React.js","JavaScript","React query","Tailwind CSS", "Supabase"],
       "features": ["User Authentication", "Product management (add, edit, delete products)", "Sales tracking with real-time data visualization", "Responsive Design"],
-      "imageCover": "/projects images/dashboard/image10.png",
-      "images":["/projects images/dashboard/image10.png","/projects images/dashboard/image12.png","/projects images/dashboard/image13.png","/projects images/dashboard/image14.png", "/projects images/dashboard/screely-17270643240291.png", "/projects images/dashboard/screely-172880425529712.png"],
-      "performance":"/projects images/dashboard/screencapture-googlechrome-github-io-lighthouse-viewer-2024-09-16-21_39_49 (1).png",
+      "imageCover": {"large":"/projects images/dashboard/image10.png","medium":"/projects images/dashboard/dashboard-medium.png","small":"/projects images/dashboard/dashboard-small.png"},
       "demo": "https://pegasus-dashboard-seven.vercel.app",
       "github": "https://github.com/ibrahem-mohamedabodeif/pegasus-dashboard"
-    },{
+    },
+    {
       "id": 4,
-      "title": "myPlanner",
-      "category": "Web app",
-      "projectName": "My Planner",
-      "summary": "A personal planner for managing daily tasks and notes with an intuitive, mobile-friendly interface with features like create, track, and delete tasks and notes.",
-      "tech": ["React.js","React Router","Css"],
-      "features": ["Task creation, editing, and deletion", "Notes management", "Responsive Design"],
-      "imageCover": "/projects images/planner/screely-1727064343910.png",
-      "images":["/projects images/planner/image1.png","/projects images/planner/image2.png","/projects images/planner/image3.png"],
-      "performance":"/projects images/planner/screencapture-googlechrome-github-io-lighthouse-viewer-2024-09-16-21_48_03 (1).png",
-      "demo": "https://my-planner-nine.vercel.app/",
-      "github": "https://github.com/ibrahem-mohamedabodeif/my-planner"
-    },{
-      "id": 5,
       "title": "BuildHub",
       "category": "Landing page",
       "projectName": "BuildHub",
-      "summary": "A budgeting app that helps users save money by tracking their income and expenses, as well as setting specific goals for their savings. The app includes features like income and expense tracking, saving percentage calculation, and a real-time budget summary.",
+      "summary": "Build Hub is a landing page for an integrated engineering office that aims to showcase engineering projects and services in a professional and modern manner. The platform provides a comprehensive overview of the latest completed projects, highlighting details of the designs and services provided, helping clients explore the quality and expertise of the office. The platform also facilitates easy communication with the engineering team and inquiries about various services, making it an ideal tool for clients seeking integrated engineering solutions characterized by creativity and efficiency.",
       "tech": ["Next.js","Tailwind CSS"],
-      "features": ["Income and expense tracking", "Budget tracking", "Saving percentage calculation", "Responsive Design"],
-      "imageCover": "/projects images/budget/image1.png"
+      "imageCover": {"large":"/projects images/buildhub/buildhub.png","medium":"/projects images/buildhub/buildhub-medium.png","small":"/projects images/buildhub/buildhub-small.png"},
+      "demo": "https://build-hub-one.vercel.app/",
+      "github": "https://github.com/ibrahem-mohamedabodeif/build-hub"
     }
   ]
   
