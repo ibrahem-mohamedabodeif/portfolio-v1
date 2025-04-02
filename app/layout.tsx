@@ -1,34 +1,17 @@
 import type { Metadata } from "next";
+import { Open_Sans } from 'next/font/google';
 import "./globals.css";
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
 
+const openSans = Open_Sans({
+  subsets: ['latin'],
+  style: "normal",
+});
+
 export const metadata: Metadata = {
   title: "Portfolio",
   description: "A portfolio showcasing my projects and skills.",
-  icons: {
-    icon: "/favicon.ico",
-    shortcut: "/favicon.ico",
-    apple: "/favicon.ico",
-  },
-  keywords: [
-    "portfolio",
-    "projects",
-    "web development",
-    "software engineering",
-    "frontend development",
-    "javascript",
-    "typescript",
-    "react",
-    "nextjs",
-    "tailwindcss",
-    "supabase",
-    "github",
-    "web design",
-    "web applications",
-    "responsive design",
-    "software development",
-  ]
 };
 
 export default function RootLayout({
@@ -37,16 +20,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className="text-black">
+    <html lang="en" className={openSans.className}>
+      <body className="text-black" cz-shortcut-listen="true">
         <header className="py-3 px-7 lg:px-20 bg-[#e5e5e5]">
-          <Navbar/>
+          <Navbar />
         </header>
-        <main className="min-h-screen">
-          {children}
-        </main>
+        <main className="min-h-screen">{children}</main>
         <footer className="mt-auto">
-          <Footer/>
+          <Footer />
         </footer>
       </body>
     </html>
