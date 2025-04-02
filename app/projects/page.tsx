@@ -133,7 +133,8 @@ export default function ProjectsSection() {
           <button onClick={handleNextProject} className="cursor-pointer p-1 sm:p-2 rounded-full text-red-800">
             <MdOutlineKeyboardArrowUp size={30} />
           </button>
-          <button onClick={handlePrevProject} className="cursor-pointer p-1 sm:p-2 rounded-full text-red-800">
+          <span className="text-3xl">{currentProject < 10 ? `0${currentProject+1}` : currentProject+1}</span>
+          <button onClick={handlePrevProject} className="cursor-pointer p-1 sm:p-2 rounded-full">
             <MdOutlineKeyboardArrowDown size={30} />
           </button>
         </div>
